@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Sushi</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+  
+        <!--tirar depois  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body class="body-fixed">
+    <header class="site-header"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="logo.png" width="160" height="36" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu">
+                                <li><a href="#home">Home</a></li>   
+                                <li><a href="#about">Sobre nós</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                
+                            </ul>
+                        </nav>
+                        <div class="header-right">
+                            <a href="javascript:void(0)" class="header-btn">
+                
+                                <i class="uil uil-bell popup" onclick="myFunction()"><span class="popuptext" id="myPopup">
+                                    Foi chamado um empregado à sua mesa</span>
+                                </i>
+
+                            </a>
+                            <a href="cart.html" class="header-btn header-cart">
+                                <i class="uil uil-shopping-bag"></i>
+                                <div id="cartAmount" class="cartAmount">0</div>
+                            </a>
+
+                            
+                            <a
+                            href="javascript:void(0)"
+                            class="header-btn header-cart header-profile">
+                            <i class="uil uil-user-md popup2" onclick="myFunction2()">
+                            </a>
+                                <div class="action">
+                                    <div class="popuptext2" id="myPopup2">
+                                        <h3>
+                                            Olá João!
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                <i class="uil uil-user"></i>
+                            
+                                                <a href="#">Meu perfil</a>
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-clipboard-notes"></i>
+                                                <a href="hist.htm">Histórico de pedidos</a>
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-question-circle"></i>
+                                                <a href="ajuda.html">Ajuda</a>
+                                            </li>
+                                        </ul>
+                                                </div>
+                                                </div>
+                                        </i>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about-sec section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="sec-title text-center mb-5">
+              <h2 class="h2-title">Origem dos Nossos Ingredientes</h2>
+              <div class="sec-title-shape mb-4">
+                <img src="assets/images/title-shape.svg" alt="" />
+              </div>
+        </div>
+      </div>
+      <div class="banner-shape-2 w-100" data-depth="0.25">
+        <img src="assets/images/leaf.png" alt="" />
+      </div>
+    </div>
+
+
+    <div class="sec-wp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner-text">
+              <h1 class="h1-title">
+                <span>Arroz</span>
+              </h1>
+              <p>
+                O arroz que utilizamos é produzido em Portugal, mais concretamente na região de Aveiro. 
+                É um arroz de qualidade superior, que é produzido com água de nascente e com um processo de produção que garante a sua qualidade. 
+                O arroz é um alimento muito importante na nossa dieta, pois é rico em hidratos de carbono, vitaminas e minerais. 
+                É um alimento muito versátil, podendo ser utilizado em diversas receitas, desde pratos salgados a doces. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-img-wp">
+              <div
+                class="banner-img"
+                style="background-image: url(assets/images/arroz.png)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <br>
+      <br>
+      <br>
+
+        
+    <div class="sec-wp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner-text">
+              <h1 class="h1-title">
+                Camarão
+              </h1>
+              <p>
+                Os camarões utilizados na nossa cozinha, são pescados na zona de Sesimbra.
+                São pescados de forma sustentável, com o mínimo de impacto no meio ambiente.
+                Os camarões são um alimento muito rico em proteínas, vitaminas e minerais.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-img-wp">
+              <div
+                class="banner-img"
+                style="background-image: url(assets/images/camarao.jpeg)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="sec-wp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner-text">
+              <h1 class="h1-title">
+                <span>Cebolinho</span>
+              </h1>
+              <p>
+                O nosso cebolinho é cultivado aqui mesmo, nas nossas estufas, em pleno coração da cidade de Lisboa.
+                O cebolinho é um legume rico em vitaminas e minerais, sendo muito utilizado em diversas receitas, desde salgados a doces. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-img-wp">
+              <div
+                class="banner-img"
+                style="background-image: url(assets/images/cebolinho.png)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+    <br>
+    <br>
+    <br>
+
+      
+  <div class="sec-wp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="banner-text">
+            <h1 class="h1-title">
+              Salmão
+            </h1>
+            <p>
+              O salmão utilizado na nossa cozinha é pescado no atlântico, mais concretamente na região de Setúbal.
+              É um peixe muito rico em proteínas, vitaminas e minerais.
+              O salmão é ótimo para a nossa saúde, pois é um peixe muito saudável.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="banner-img-wp">
+            <div
+              class="banner-img"
+              style="background-image: url(assets/images/salmao.jpeg)"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+      
+   
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/font-awesome.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script> 
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="main.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/src/Data.js"></script>
+    <script src="assets/js/src/main.js"></script>
+    <script>
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+      
+      
+    <script>
+      function myFunction2() {
+        var popup2 = document.getElementById("myPopup2");
+        popup2.classList.toggle("show");
+      }
+    </script>
+      
+      
+</body>
+
+</html>
