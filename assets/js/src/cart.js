@@ -129,7 +129,7 @@ let TotalAmount = () => {
     <div class="total">
     <h2>Total: ${amount} €</h2>
     <a class="checkout" href="progresso.html"> Pedir</a>
-    <button class="checkout"  href="progresso.html">Oferecer</button>
+    <a class="checkout"  href="progresso.html">Oferecer</a>
     <button onclick="clearCart()" class="removeAll">Apagar Carrinho</button>
     </div>
     `;
