@@ -3,8 +3,6 @@
 font-family: 'Poppins', sans-serif; */
 
 body {
-    height: 1280 px;
-    width: 720 px;
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility !important;
     background: #f3f3f5;
