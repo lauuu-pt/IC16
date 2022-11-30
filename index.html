@@ -41,7 +41,8 @@
                         <div class="header-right">
                             <a href="javascript:void(0)" class="header-btn">
                 
-                                <i class="uil uil-bell popup" onclick="myFunction()"><span class="popuptext" id="myPopup">
+                                <i class="uil uil-bell popup" onclick="myFunction()">
+                                    <span class="popuptext" id="myPopup">
                                     Foi chamado um empregado à sua mesa</span>
                                 </i>
 
@@ -77,9 +78,9 @@
                                                 <a href="ajuda.html">Ajuda</a>
                                             </li>
                                         </ul>
-                                                </div>
-                                                </div>
-                                        </i>
+                                    </div>
+                                </div>
+                            </i>
                 
                         </div>
                     </div>
@@ -177,20 +178,17 @@
                                     <div class="menu-tab text-center">
                                         <ul class="filters">
                                             <div class="filter-active"></div>
-                                            <li class="filter" data-filter=".all, .entradas, .sushi, .combinados, .bebidas, .sobremesas">
-                                                Tudo
+                                            <li class="filter" onclick="filterObjects('tudo')"> Tudo
                                             </li>
-                                            <li class="filter" data-filter=".entradas">Entradas
+                                            <li class="filter" onclick="filterObjects('entradas')"> Entradas
                                             </li>
-                                            <li class="filter" data-filter=".sushi">Sushi
+                                            <li class="filter" onclick="filterObjects('sushi')"> Sushi
                                             </li>
-                                            <li class="filter" data-filter=".combinados">Combinados
+                                            <li class="filter" onclick="filterObjects('combinados')"> Combinados
                                             </li>
-                                            <li class="filter" data-filter=".bebidas">
-                                                Bebidas
+                                            <li class="filter" onclick="filterObjects('bebidas')"> Bebidas
                                             </li>
-                                            <li class="filter" data-filter=".sobremesas">
-                                                Sobremesas
+                                            <li class="filter" onclick="filterObjects('sobremesas')"> Sobremesas
                                             </li>
                                         
                                         </ul>
@@ -211,6 +209,7 @@
 
         </div>
     </div>
+
 
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
@@ -245,5 +244,6 @@
       
       
 </body>
+
 
 </html>

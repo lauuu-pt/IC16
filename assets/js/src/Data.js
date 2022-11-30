@@ -30,6 +30,127 @@ let shopItemsData = [
   },
 
   //sushi
+  {
+    id: "dedbb",
+    name: "Hosomaki de atum",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/17.png",
+  },
+  {
+    id: "fre",
+    name: "Hosomaki de salmão",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/18.png",
+  },
+  {
+    id: "dedee",
+    name: "Hosomaki de pepino",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/31.png",
+  },
+
+
+  {
+    id: "bbb",
+    name: "Nigiri de atum",
+    price: 5.0,
+    categoria: "sushi",
+    img: "assets/images/dish/13.png",
+  },
+  {
+    id: "xxx",
+    name: "Nigiri de salmão",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/14.png",
+  },
+  {
+    id: "iii",
+    name: "Gunkan de Salmão",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/15.png",
+  },
+  {
+    id: "nvhj",
+    name: "Gunkan Pop",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/34.png",
+  },
+  {
+    id: "dedee",
+    name: "Gunkan Maguro",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/5.png",
+  },
+  {
+    id: "lkkko",
+    name: "Temaki California",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/27.png",
+  },
+  {
+    id: "popo",
+    name: "Temaki Maguro",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/29.png",
+  },
+  {
+    id: "weqaa",
+    name: "Temaki de Salmão",
+    price: 5.0,
+    categoria: "sushi",
+    img: "assets/images/dish/28.png",
+  },
+  {
+    id: "eee",
+    name: "Uramaki Califórnia",
+    price: 8.0,
+    categoria: "sushi",
+    img: "assets/images/dish/16.png",
+  },
+  {
+    id: "ooo",
+    name: "Uramaki Safari",
+    price: 7.0,
+    categoria: "sushi",
+    img: "assets/images/dish/19.png",
+  },
+  {
+    id: "eee",
+    name: "Uramaki Ichigo",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/20.png",
+  },
+  {
+    id: "www",
+    name: "Hot Philadelphia",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/24.png",
+  },
+  {
+    id: "doo",
+    name: "Harumaki Roll",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/25.png",
+  },
+
+
+
+  
+  
+  
+
 
   //combinados
   {
@@ -78,6 +199,37 @@ let shopItemsData = [
     categoria: "bebidas",
     img: "assets/images/dish/12.png",
   },
+  {
+    id: "vfdv",
+    name: "Vinho Rosé",
+    price: 23.0,
+    categoria: "bebidas",
+    img: "assets/images/dish/21.png",
+  },
+  {
+    id: "dddd",
+    name: "Vinho Tinto",
+    price: 20.0,
+    categoria: "bebidas",
+    img: "assets/images/dish/22.png",
+  },
+  {
+    id: "evev",
+    name: "Vinho Branco",
+    price: 20.0,
+    categoria: "bebidas",
+    img: "assets/images/dish/23.png",
+  },
+
+
 
   //sobremesas
+  {
+    id: "ccc",
+    name: "Tarte de Caramelo Salgado",
+    price: 6.0,
+    categoria: "sobremesas",
+    img: "assets/images/dish/32.png",
+  },
+
 ];
