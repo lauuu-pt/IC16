@@ -1310,7 +1310,6 @@ p {
     /*timer*/
     .temp{
         width: 100%;
- 
         color: black;
         display: flex;
         align-items: center;
@@ -1325,11 +1324,16 @@ p {
     .progress{
         width: 100%;
         height: 20px;
-        background-color: #ffffff;
+        background-color: white;
         border-radius: 10px;
         margin-bottom: 20px;
     }
 
+    .bg-success{
+        background-color: #e3a92b !important;
+    }
+
+    
 
 
     /* .menu-list-row .bydefault_show .dish-box-wp {
