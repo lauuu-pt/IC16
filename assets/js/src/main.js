@@ -69,10 +69,10 @@ let generateShop = () => {
       let search = basket.find((x) => x.id === id) || [];
      return `
     <div id=product-id-${id} class="item"> 
-    
+      <div class='${categoria}'>
     
       <div class="dish-box text-center">
-       <div class="dist-img">
+          <div class="dist-img">
               <img src=${img} alt="">
           </div>
           <div class="dish-title">
@@ -108,6 +108,7 @@ let generateShop = () => {
             </ul>
 
             </div>
+          </div>
           </div>
         
       </div>
@@ -162,6 +163,39 @@ let calculation = () => {
 };
 
 calculation();
+
+/**filtros */
+
+function filterObjects(c){
+  var x,i;
+  x = document.getElementsByClassName("box");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    removeClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+  }
+}
+
+function addClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function removeClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
 
 
 

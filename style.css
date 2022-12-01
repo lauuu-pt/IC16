@@ -3,8 +3,7 @@
 font-family: 'Poppins', sans-serif; */
 
 body, html {
-    height: 720px;
-    width: 1280px;
+
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility !important;
     background: #f3f3f5;
@@ -1518,4 +1517,16 @@ display: none;
   
   .popup2 .show {
     visibility: visible;
+  }
+
+
+
+  /*filters*/
+
+  .show{
+    display: block;
+  }
+
+  .box{
+    display: none;
   }
