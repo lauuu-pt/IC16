@@ -1152,10 +1152,11 @@ p {
 
   .cart-item {
     margin-top: 20px;
-    margin-left: 350px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
-    width: 600px;
-    height: 200px;
+    width: 900px;
+    height: 250px;
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
     box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
     border-radius: 50px;
@@ -1177,21 +1178,19 @@ p {
   .title-price-x {
     width: 195px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   
   .title-price {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 380px;
   }
   
   .cart-item-price {
+    width: 100%;
     margin-top: 25px;
-    margin-left: 150px;
+    text-align: right;
     color: black;
-    padding: 7px 9px;
   }
   
 
@@ -1406,7 +1405,7 @@ p {
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: -600%;
+    bottom: -470%;
     left: 50%;
     margin-left: -80px;
   }
@@ -1420,7 +1419,7 @@ p {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #555 transparent;
+    border-color: transparent transparent white transparent;
   }
   
   /* Toggle this class - hide and show the popup */
