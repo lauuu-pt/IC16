@@ -30,6 +30,151 @@ let shopItemsData = [
   },
 
   //sushi
+  {
+    id: "sss",
+    name: "Hosomaki Maguro",
+    price: 4.4,
+    categoria: "sushi",
+    img: "assets/images/dish/17.png",
+  },
+  {
+    id: "sss",
+    name: "Hosomaki Salmão",
+    price: 4.4,
+    categoria: "sushi",
+    img: "assets/images/dish/18.png",
+  },
+  {
+    id: "sss",
+    name: "Hosomaki de Pepino",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/31.png",
+  },
+  {
+    id: "sss",
+    name: "Nigiri Maguro",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/13.png",
+  },
+  {
+    id: "sss",
+    name: "Nigiri de Salmão",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/14.png",
+  },
+  {
+    id: "sss",
+    name: "Uramaki Califórnia",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/16.png",
+  },
+  {
+    id: "yyyr",
+    name: "Uramaki Safari",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/19.png",
+  },
+  {
+    id: "1w34r",
+    name: "Uramaki Inari",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/26.png",
+  },
+  {
+    id: "1w34r",
+    name: "Uramaki Ebiten",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/20.png",
+  },
+  {
+    id: "1w34r",
+    name: "Uramaki Vegetariano",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/33.png",
+  },
+  {
+    id: "ssbbbs",
+    name: "Gunkan de Salmão",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/15.png",
+  },
+
+  {
+    id: "bbt",
+    name: "Gunkan Pop",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/34.png",
+  },
+ 
+  {
+    id: "sstgbts",
+    name: "Gunkan Maguro",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/5.png",
+  },
+
+  {
+    id: "bgtt",
+    name: "Gunkan Ichigo",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/6.png",
+  },
+    
+  {
+    id: "ttx",
+    name: "Temaki Maguro",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/29.png",
+  },
+
+  {
+    id: "srsrrs",
+    name: "Temaki de Salmão",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/28.png",
+  },
+
+  {
+    id: "sss",
+    name: "Temaki Pop",
+    price: 4.0,
+    categoria: "sushi",
+    img: "assets/images/dish/27.png",
+  },
+  
+  {
+    id: "rehgr",
+    name: "Hot Philadelphia",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/24.png",
+  },
+  
+  {
+    id: "rehgr",
+    name: "Harumaki Roll",
+    price: 6.0,
+    categoria: "sushi",
+    img: "assets/images/dish/25.png",
+  },
+  
+  
+  
+    
 
   //combinados
   {
@@ -73,11 +218,40 @@ let shopItemsData = [
   },
   {
     id: "add",
-    name: "Nestea de Pêssego",
+    name: "Vinho Rosé",
     price: 2.0,
     categoria: "bebidas",
-    img: "assets/images/dish/12.png",
+    img: "assets/images/dish/21.png",
+  },
+  {
+    id: "add",
+    name: "Vinho Branco",
+    price: 2.0,
+    categoria: "bebidas",
+    img: "assets/images/dish/23.png",
+  },
+  {
+    id: "add",
+    name: "Vinho Tinto",
+    price: 2.0,
+    categoria: "bebidas",
+    img: "assets/images/dish/22.png",
+  },
+  {
+    id: "add",
+    name: "Fanta",
+    price: 2.0,
+    categoria: "bebidas",
+    img: "assets/images/dish/35.png",
   },
 
   //sobremesas
+  {
+    id: "adfffd",
+    name: "Tarte de Caramelo Salgado",
+    price: 2.0,
+    categoria: "sobremesas",
+    img: "assets/images/dish/32.png",
+  },
+
 ];
