@@ -1183,15 +1183,18 @@ p {
   
   .title-price {
     display: flex;
-    gap: 380px;
+    gap: 150px;
   }
   
   .cart-item-price {
-    width: 100%;
     margin-top: 25px;
     text-align: right;
     color: black;
   }
+
+  .title-price p {
+            width:200px;  
+        }
   
 
 
