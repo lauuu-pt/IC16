@@ -1279,35 +1279,49 @@ p {
     background-color: #e3a92b;
   }
   .bi-x-lg {
-    rgb(233, 77, 56);
+    /**rgb(233, 77, 56);**/
     font-weight: bold;
   }
   
+
+
+
   /**
   * ! style rules for shopping-cart
   **/
   
-  .men {
+.men {
     display: grid;
     grid-template-columns: repeat(1, 320px);
     justify-content: center;
     gap: 15px;
-  }
+    
+}
   
 
+.header-cart {
+    background-color: #f3f3f5;
+}
+
+
+
+
+.shopping-cart {
+    padding-top: 10em;  
+ }
+
+
+
+.total, 
+.empty{
+        margin-top: 4em;
+}
 
 
 
 
 
-
-    .total,
-    .empty{
-        margin-top: 20%;
-    }
-
-
-    /*timer*/
+/*timer*/
     .temp{
         width: 100%;
         color: black;
