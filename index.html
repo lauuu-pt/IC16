@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1280">
     <title>Kyoto Sushi</title>
-    <!-- for icons  -->
+    <!-- o que não deixa que o ecrã fique do tamanho  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -178,20 +178,18 @@
                                     <div class="menu-tab text-center">
                                         <ul class="filters">
                                             <div class="filter-active"></div>
-                                            <li class="filter" data-filter=".all, .entradas, .sushi, .combinados, .bebidas, .sobremesas">
-                                                Tudo
+                                                                   <div class="filter-active"></div>
+                                            <li class="filter" onclick="filterObjects('tudo')"> Tudo
                                             </li>
-                                            <li class="filter" data-filter=".entradas">Entradas
+                                            <li class="filter" onclick="filterObjects('entradas')"> Entradas
                                             </li>
-                                            <li class="filter" data-filter=".sushi">Sushi
+                                            <li class="filter" onclick="filterObjects('sushi')"> Sushi
                                             </li>
-                                            <li class="filter" data-filter=".combinados">Combinados
+                                            <li class="filter" onclick="filterObjects('combinados')"> Combinados
                                             </li>
-                                            <li class="filter" data-filter=".bebidas">
-                                                Bebidas
+                                            <li class="filter" onclick="filterObjects('bebidas')"> Bebidas
                                             </li>
-                                            <li class="filter" data-filter=".sobremesas">
-                                                Sobremesas
+                                            <li class="filter" onclick="filterObjects('sobremesas')"> Sobremesas
                                             </li>
                                         
                                         </ul>
