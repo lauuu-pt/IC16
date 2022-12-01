@@ -40,9 +40,7 @@ let generateCartItems = () => {
          <!-- <h3> ${item * search.price} €</h3> -->
         </div>
       </div>
-      `;
-      })
-      .join(""));
+      `;}).join(""));
   } else {
     ShoppingCart.innerHTML = ``;
     label.innerHTML = `

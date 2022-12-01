@@ -69,7 +69,6 @@ let generateShop = () => {
       let search = basket.find((x) => x.id === id) || [];
      return `
     <div id=product-id-${id} class="item"> 
-      <div class='${categoria}'>
     
       <div class="dish-box text-center">
           <div class="dist-img">
@@ -109,7 +108,7 @@ let generateShop = () => {
 
             </div>
           </div>
-          </div>
+          
         
       </div>
     `;
