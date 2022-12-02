@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1280">
     <title>Kyoto Sushi</title>
-    <!-- for icons  -->
+    <!-- o que não deixa que o ecrã fique do tamanho  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -15,9 +17,8 @@
         <!--tirar depois  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    
-  </head>
-
+   
+</head>
 <body class="body-fixed">
     <header class="site-header"> 
         <div class="container">
@@ -33,17 +34,16 @@
                     <div class="main-navigation">
                         <nav class="header-menu">
                             <ul class="menu food-nav-menu">
-                              <li><a href="index.html#home">Home</a></li>   
-                              <li><a href="index.html#about">Sobre nós</a></li>
-                              <li><a href="index.html#menu">Menu</a></li>
+                                <li><a href="#home">Home</a></li>   
+                                <li><a href="#about">Sobre nós</a></li>
+                                <li><a href="#menu">Menu</a></li>
                                 
                             </ul>
                         </nav>
                         <div class="header-right">
                             <a href="javascript:void(0)" class="header-btn">
-                
-                                <i class="uil uil-bell popup" onclick="myFunction()"><span class="popuptext" id="myPopup">
-                                    Foi chamado um empregado à sua mesa</span>
+                                <i class="uil uil-bell popup" onclick="myFunction()">
+                                    <span class="popuptext" id="myPopup">Foi chamado um empregado à sua mesa</span>
                                 </i>
 
                             </a>
@@ -52,35 +52,32 @@
                                 <div id="cartAmount" class="cartAmount">0</div>
                             </a>
 
-                            
                             <a
                             href="javascript:void(0)"
-                            class="header-btn header-cart header-profile">
-                            <i class="uil uil-user-md popup2" onclick="myFunction2()">
-                            </a>
-                                <div class="action">
-                                    <div class="popuptext2" id="myPopup2">
-                                        <h3>
-                                            Olá João!
-                                        </h3>
-                                        <ul>
-                                            <li>
-                                                <i class="uil uil-user"></i>
-                            
-                                                <a href="#">Meu perfil</a>
-                                            </li>
-                                            <li>
-                                                <i class="uil uil-clipboard-notes"></i>
-                                                <a href="hist.htm">Histórico de pedidos</a>
-                                            </li>
-                                            <li>
-                                                <i class="uil uil-question-circle"></i>
-                                                <a href="ajuda.html">Ajuda</a>
-                                            </li>
-                                        </ul>
-                                                </div>
-                                                </div>
-                                        </i>
+                            class="header-btn header-cart header-profile"
+                          >
+                          </a>
+                          <i class="uil uil-user-md popup2 reed" onclick="myFunction2()">
+                            <div class="action">
+                              <div class="popuptext2" id="myPopup2">
+                                <h3>Olá João!</h3>
+                                <ul>
+                                  <li>
+                                    <i class="uil uil-user"></i>
+                                    <a href="#">Meu perfil</a>
+                                  </li>
+                                  <li>
+                                    <i class="uil uil-clipboard-notes"></i>
+                                    <a href="hist.html">Histórico de pedidos</a>
+                                  </li>
+                                  <li>
+                                    <i class="uil uil-question-circle"></i>
+                                    <a href="ajuda.html">Ajuda</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </i>
                 
                         </div>
                     </div>
