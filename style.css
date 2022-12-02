@@ -280,8 +280,8 @@ h4, h5, h6 {
 }
 
 p {
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 16px;
     margin-left: 16px
 }
 
@@ -1546,3 +1546,5 @@ display: none;
   .box{
     display: none;
   }
+
+
