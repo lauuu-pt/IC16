@@ -31,7 +31,7 @@ let shopItemsData = [
 
   // //sushi
    {
-     id: "sss",
+     id: "hjh",
      name: "Hosomaki Maguro",
      price: 4.4,
      categoria: "sushi",
@@ -52,21 +52,21 @@ let shopItemsData = [
 //     img: "assets/images/dish/31.png",
 //   },
    {
-     id: "sss",
+     id: "jhk",
      name: "Nigiri Maguro",
      price: 4.0,
      categoria: "sushi",
      img: "assets/images/dish/13.png",
    },
    {
-     id: "sss",
+     id: "kjlio",
      name: "Nigiri de Salmão",
      price: 4.0,
      categoria: "sushi",
      img: "assets/images/dish/14.png",
    },
    {
-     id: "sss",
+     id: "nkjk",
      name: "Uramaki Califórnia",
      price: 4.0,
      categoria: "sushi",
@@ -178,7 +178,7 @@ let shopItemsData = [
 
   //combinados
   {
-    id: "sss",
+    id: "nkji",
     name: "Combinado I",
     price: 24.4,
     categoria: 'box combinados',
@@ -187,7 +187,7 @@ let shopItemsData = [
    {
      id: "sdsr",
      name: "Combinado II",
-     price: 26.2,
+     price: 26.2, 
      categoria: "combinados",
      img: "assets/images/dish/8.png",
    },
@@ -217,21 +217,21 @@ let shopItemsData = [
      img: "assets/images/dish/11.png",
    },
    {
-     id: "add",
+     id: "ghgj",
      name: "Vinho Rosé",
      price: 2.0,
      categoria: "bebidas",
      img: "assets/images/dish/21.png",
    },
    {
-     id: "add",
+     id: "ioi",
      name: "Vinho Branco",
      price: 2.0,
      categoria: "bebidas",
      img: "assets/images/dish/23.png",
    },
    {
-     id: "add",
+     id: "hhhu",
      name: "Vinho Tinto",
      price: 2.0,
      categoria: "bebidas",
