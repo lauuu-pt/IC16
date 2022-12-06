@@ -126,9 +126,9 @@ let TotalAmount = () => {
     label.innerHTML = `
     <div class="total">
     <h2>Total: ${amount} €</h2>
-    <a class="checkout" href="progresso.html"> Pedir</a>
-    <a class="checkout"  href="progresso.html">Oferecer</a>
-    <button onclick="clearCart()" class="removeAll">Apagar Carrinho</button>
+    <a class="removeAll" href="progresso.html"> Pedir</a>
+    <a class="removeAll"  href="progresso.html">Oferecer</a>
+    <button onclick="clearCart()" class="checkout">Apagar Carrinho</button>
     </div>
     `;
   } else return;
