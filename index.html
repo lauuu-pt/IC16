@@ -61,7 +61,12 @@
                           <i class="uil uil-user-md popup2 reed" onclick="myFunction2()">
                             <div class="action">
                               <div class="popuptext2" id="myPopup2">
-                                <h3>Olá João!</h3>
+                                <h3>Olá <span id="welcome"></span>!</h3>
+                                <script>
+                                    window.onload = function() {
+                                        document.getElementById('welcome').innerText = sessionStorage.getItem('utilizador');
+                                    };
+                                </script>
                                 <ul>
                                   <li>
                                     <i class="uil uil-user"></i>
@@ -108,7 +113,7 @@
                                         Bem vindo ao
                                         <span>Kyoto Sushi</span>.
                                     </h1>
-                                    <p>Este é o Kyoto sushi, um restaurante que se encontra 
+                                    <p>Este é o Kyoto Sushi, um restaurante que se encontra 
                                     localizado numa das zonas mais prestigiadas do nosso país.</p>
                                     <div class="banner-btn mt-4">
                                         <a href="#menu" class="sec-btn">Ver Menu</a>
@@ -134,7 +139,7 @@
                                 <div class="sec-title-shape mb-4">
                                     <img src="assets/images/title-shape.svg" alt="">
                                 </div>
-                                <p>O Kyoto sushi foi criado em 2014 e tem vindo 
+                                <p>O Kyoto Sushi foi criado em 2014 e tem vindo 
                                 a receber diversos prémios.
                                 É um restaurante de cozinha japonesa e conta com
                                 os melhores chefs do país</p>
