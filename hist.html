@@ -135,33 +135,20 @@
                               <td class="text-center">35.00€</td>
                               <td class="text-center"><a ><i class="uil uil-download-alt"></i></a></td>
                               <!--<td class="text-center"><a href="progresso.html"><i class="uil uil-repeat"></i></a></td>--> 
-                              <td><button data-modal-target="#modal" class="uil uil-repeat"></button></td>
-                                <div class="modal" id="modal">
-                                    <div class="modal-topo">
-                                    <div class="title">Chamar o empregado</div>
-                                    <!---<button data-close-button class="close-button">&times;</button> --->
-                                    </div>
-                                    <div class="modal-body">
-                                    Tem a certeza que deseja chamar o empregado?
-                                    <br>
-                                    <br>
-                                    <button data-modal-target="#modal2" data-close-button class="close-button">Sim</button>
-                                    <button data-close-button class="close-button">Não</button>
-                                    </div>
+                              <td><button class="btn" data-target="#modal1">Modal 1</button></td>
+                                <div class="modal" id="modal1">
+                                   <div class="header">
+                                     <div class="title">Modal Title</div>
+                                     <button class="btn modal-btn" data-target="#modal1">&times;</button>
+                                   </div>
+                                   <div class="body">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam
+                                     quisquam ratione rerum, eaque similique nostrum nihil pariatur
+                                     cupiditate! Esse excepturi inventore unde aut dolor exercitationem
+                                     perspiciatis asperiores nobis at.
+                                   </div>
                                 </div>
-                                <div id="overlay"></div>
-
-                                <div class="modal2" id="modal2">
-                                    <div class="modal-topo" >
-                                    <!-- <div class="title">Chamar o empregado</div> -->
-                                    <button data-close-button class="close-button"><i class="uil uil-times"></i></button> 
-                                    </div>
-                                    <div class="modal-body">
-                                    Foi chamado um empregado à sua mesa, aguarde que ele chegue.
-                                    <br>
-                                    </div>
-                                </div>
-                                <div id="overlay"></div>
+                                
                               
                           </tr>
                           <tr>
@@ -257,7 +244,7 @@
     <script src="assets/js/jquery.mixitup.min.js"></script>
     <script src="assets/js/src/Data.js"></script>
     <script src="assets/js/src/main.js"></script>
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
     <script>
     function myFunction() {
         var popup = document.getElementById("myPopup");
