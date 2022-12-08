@@ -1545,3 +1545,72 @@ input {
 }
 
 
+/** styles do inicio **/
+
+#login {
+  margin-top: 200px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+
+
+#utilizador {
+  width: auto;
+  height: 58px;
+  text-align: center;
+  border: 3px solid #e3a92b;
+  border-radius: 30px;
+
+}
+
+
+#login-logo{
+  margin-bottom: 5px;
+
+}
+
+
+#login i {
+  color: #e3a92b;
+  font-size: 80px;
+
+}
+
+#entrar {
+  min-width: 120px;
+  min-height: 58px;
+  background-color: #e3a92b;
+  color: white;
+  box-shadow: 3px 3px 5px #b2b2b3, -3px -3px 5px #ffffff;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+  overflow: hidden;
+  position: relative;
+  padding: 6px 30px;
+  margin-top: 10px;
+}
+
+#entrar:disabled {
+  display: none;
+}
+
+#login-div {
+  margin-bottom: 0px !important;
+}
+#login-div h2 {
+  margin-bottom: 0px !important;
+}
+
+#login-bemvindo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}

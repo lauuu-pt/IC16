@@ -61,7 +61,12 @@
                           <i class="uil uil-user-md popup2 reed" onclick="myFunction2()">
                             <div class="action">
                               <div class="popuptext2" id="myPopup2">
-                                <h3>Olá João!</h3>
+                                <h3>Olá <span id="welcome"></span>!</h3>
+                                <script>
+                                    window.onload = function() {
+                                        document.getElementById('welcome').innerText = sessionStorage.getItem('utilizador');
+                                    };
+                                </script>
                                 <ul>
                                   <li>
                                     <i class="uil uil-user"></i>
