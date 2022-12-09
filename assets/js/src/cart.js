@@ -40,9 +40,7 @@ let generateCartItems = () => {
          <!-- <h3> ${item * search.price} €</h3> -->
         </div>
       </div>
-      `;
-      })
-      .join(""));
+      `;}).join(""));
   } else {
     ShoppingCart.innerHTML = ``;
     label.innerHTML = `
@@ -121,16 +119,16 @@ let TotalAmount = () => {
         let { item, id } = x;
         let search = shopItemsData.find((y) => y.id === id) || [];
 
-        return item * search.price;
+        return Math.round( item * search.price * 10 ) / 10;
       })
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
     label.innerHTML = `
     <div class="total">
     <h2>Total: ${amount} €</h2>
-    <a class="checkout" href="progresso.html"> Pedir</a>
-    <a class="checkout"  href="progresso.html">Oferecer</a>
-    <button onclick="clearCart()" class="removeAll">Apagar Carrinho</button>
+    <a class="removeAll" href="progresso.html"> Pedir</a>
+    <a class="removeAll"  href="progresso.html">Oferecer</a>
+    <button onclick="clearCart()" class="checkout">Apagar Carrinho</button>
     </div>
     `;
   } else return;
