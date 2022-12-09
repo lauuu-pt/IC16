@@ -65,7 +65,34 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
     .map((x) => {
-      let { id, name, price, categoria, img } = x;
+      let {
+        id,
+        name,
+        price,
+        categoria,
+        img,
+        ingredientes,
+        calorias1,
+        calorias2,
+        carboidratos1,
+        carboidratos2,
+        proteinas1,
+        proteinas2,
+        gordurast1,
+        gordurast2,
+        gordurass1,
+        gordurass2,
+        sodio1,
+        sodio2,
+        colestrol1,
+        colestrol2,
+        fibra1,
+        fibra2,
+        calcio1,
+        calcio2,
+        ferro1,
+        ferro2,
+      } = x;
       let search = basket.find((x) => x.id === id) || [];
      return `
     <div id=product-id-${id} class="item"> 
@@ -102,7 +129,7 @@ let generateShop = () => {
             </li>
 
             <li>
-              <a href="ingr.html" class="btn-menu">+ info</a>
+              <a href="#popup1" class="btn-menu">+ info</a>
             </li>
             </ul>
 
@@ -111,6 +138,81 @@ let generateShop = () => {
           
         
       </div>
+      <div id="popup1" class="overlay1" style="z-index:100;">
+      <div class="popup1">
+         <h2>${name}</h2>
+         <h2>Informação Nutricional</h2>
+         <a class="close1" href="#">&times;</a>
+         <div class="content1">
+            </br>
+            <a class="textt" href="assets\js\src\Data.js"></a>Ingredientes: ${ingredientes}
+            </br>
+            </br>
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th></th>
+                     <th class="text-center">Quantidade por porção</th>
+                     <th class="text-center">%VD</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Calorias</td>
+                     <td class="text-center">${calorias1} kcal</td>
+                     <td class="text-center">${calorias2}</td>
+                  </tr>
+                  <tr>
+                     <td>Carboidratos</td>
+                     <td class="text-center">${carboidratos1}</td>
+                     <td class="text-center">${carboidratos2}</td>
+                  </tr>
+                  <tr>
+                     <td>Proteínas</td>
+                     <td class="text-center">${proteinas1}</td>
+                     <td class="text-center">${proteinas2}</td>
+                  </tr>
+                  <tr>
+                     <td>Gorduras Totais</td>
+                     <td class="text-center">${gordurast1}</td>
+                     <td class="text-center">${gordurast2}</td>
+                  </tr>
+                  <tr>
+                     <td>Gorduras Saturadas</td>
+                     <td class="text-center">${gordurass1}</td>
+                     <td class="text-center">${gordurass2}</td>
+                  </tr>
+                  <tr>
+                     <td>Sódio</td>
+                     <td class="text-center">${sodio1}</td>
+                     <td class="text-center">${sodio2}</td>
+                  </tr>
+                  <tr>
+                     <td>Colesterol</td>
+                     <td class="text-center">${colestrol1}</td>
+                     <td class="text-center">${colestrol2}</td>
+                  </tr>
+                  <tr>
+                     <td>Fibra alimentar</td>
+                     <td class="text-center">${fibra1}</td>
+                     <td class="text-center">${fibra2}</td>
+                  </tr>
+                  <tr>
+                     <td>Cálcio</td>
+                     <td class="text-center">${calcio1}</td>
+                     <td class="text-center">${calcio2}</td>
+                  </tr>
+                  <tr>
+                     <td>Ferro</td>
+                     <td class="text-center">${ferro1}</td>
+                     <td class="text-center">${ferro2}</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+
     `;
     })
     .join(""));
