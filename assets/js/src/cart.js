@@ -119,7 +119,7 @@ let TotalAmount = () => {
         let { item, id } = x;
         let search = shopItemsData.find((y) => y.id === id) || [];
 
-        return item * search.price;
+        return Math.round( item * search.price * 10 ) / 10;
       })
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
