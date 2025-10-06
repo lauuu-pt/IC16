@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1280">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1280" />
     <title>Kyoto Sushi</title>
-    <!-- o que não deixa que o ecrã fique do tamanho  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="style.css">
-  
-        <!--tirar depois  -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="logo1.png" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
 </head>
 <body class="body-fixed">
-    <header class="site-header"> 
+  <div id="ecra">
+    <header class="site-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
@@ -42,9 +56,26 @@
                         </nav>
                         <div class="header-right">
                             <a href="javascript:void(0)" class="header-btn">
-                                <i class="uil uil-bell popup" onclick="myFunction()">
-                                    <span class="popuptext" id="myPopup">Foi chamado um empregado à sua mesa</span>
-                                </i>
+                              <i class="uil uil-bell popup" onclick="mostraModalDados()"></i>
+                              <div id="modalDados" class="modal">
+                              <!-- conteudo da caixa -->
+                                  <div class="modalConteudo">
+                                      <span class="fechar">&times;</span>
+                                          <a style="color: black;" >
+                                          Deseja chamar um empregado?<br><br></a>
+                                      
+                                          <a class="removeAll" onclick="mostraModalDados2()"><strong>Sim</strong></a>
+                                          <a class="checkout"  href="index.html"><strong>Não</strong></a>
+                                      </div>
+                                  </div>
+                                              <div id="modalDados2" class="modal">
+                                                  <div class="modalConteudo">
+                                                      <span class="fechar2">&times;</span>
+                                                          <a style="color: black; " ><br><br><br>
+                                                          Um empregado foi chamado à sua mesa.<br><br><br></a>
+                                                          <a class="removeAll"  href="index.html"><strong>OK</strong></a>
+                                                  </div>
+                                              </div>
 
                             </a>
                             <a href="cart.html" class="header-btn header-cart">
@@ -66,7 +97,7 @@
                                         document.getElementById('welcome').innerText = sessionStorage.getItem('utilizador');
                                     };
                                 </script>
-                                <ul>
+                                <ul class="deff">
                                   <li>
                                     <i class="uil uil-user"></i>
                                     <a href="#">Meu perfil</a>
@@ -733,8 +764,8 @@
     <script src="assets/js/smooth-scroll.js"></script>
     <script src="main.js"></script>
     <script src="assets/js/jquery.mixitup.min.js"></script>
-    <script src="assets/js/src/Data.js"></script>
-    <script src="assets/js/src/main.js"></script>
+    <script src="assets/js/Data.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
     function myFunction() {
         var popup = document.getElementById("myPopup");
@@ -749,8 +780,29 @@
         popup2.classList.toggle("show");
       }
     </script>
+    <script>
+      function mostraModalDados() {
+          let modal = document.getElementById("modalDados");
+          let span = document.getElementsByClassName("fechar")[0];
+          modal.style.display = "block";
+          span.addEventListener('click', function () {
+            modal.style.display = "none";
+          })}
+  </script>
+  <script>
+      function mostraModalDados2() {
+          let modal = document.getElementById("modalDados2");
+          let span = document.getElementsByClassName("fechar2")[0];
+          modal.style.display = "block";
+          span.addEventListener('click', function () {
+            modal.style.display = "none";
+          })
+          span.addEventListener('click', function () {
+              modal.style.display = "none";
+          })}
+  </script>
       
-      
+  </div>
 </body>
 
 </html>
